@@ -49,16 +49,20 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
-module HALFADDSUB(a,b,sum,carry,D,Bo);
-input a,b;
-output sum,carry,D,Bo;
-xor(sum,a,b);
-and(carry,a,b);
-wire abar;
-not(abar,a);
-xor(D,a,b);
-and(Bo,abar,b);
-endmodule
+
+                                                                         #Developed by: SADHANA SHREE B
+                                                                         #Register Number: 212223230177
+                                                                         
+                                                                    module HALFADDSUB(a,b,sum,carry,D,Bo);
+                                                                    input a,b;
+                                                                    output sum,carry,D,Bo;
+                                                                    xor(sum,a,b);
+                                                                    and(carry,a,b);
+                                                                    wire abar;
+                                                                    not(abar,a);
+                                                                    xor(D,a,b);
+                                                                    and(Bo,abar,b);
+                                                                    endmodule
 
 **RTL Schematic**
 ![Screenshot 2024-03-19 083011](https://github.com/SadhanaShreee/HALF_ADDER_SUB/assets/144517664/2cdfe8e7-3e9c-4bf4-9d07-80a343334544)
